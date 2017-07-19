@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="jalanechrissia.rivera.com.easycalc.activities.MainActivity">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="@dimen/et_height"
+        android:layout_marginTop="10dp"
+        android:hint="@string/num1_hint"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="@dimen/et_height"
+        android:hint="@string/num2_hint"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_marginTop="@dimen/distance"
+        android:id="@+id/ans"
+        android:layout_width="@dimen/et_width"
+        android:layout_height="@dimen/et_height"
+        android:background="#9E9E9E"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/add"
+            android:textSize="@dimen/txt_size"/>
+        <Button
+            android:layout_toRightOf="@id/add"
+            android:id="@+id/sub"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/sub"
+            android:textSize="@dimen/txt_size"/>
+        <Button
+            android:layout_toRightOf="@id/sub"
+            android:id="@+id/clear"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/clear"
+            android:textSize="@dimen/txt_size"/>
+        <Button
+            android:layout_below="@id/add"
+            android:id="@+id/mult"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/mult"
+            android:textSize="@dimen/txt_size"/>
+        <Button
+            android:layout_below="@id/sub"
+            android:layout_toRightOf="@id/mult"
+            android:id="@+id/div"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/div"
+            android:textSize="@dimen/txt_size"/>
+        <Button
+            android:layout_below="@id/clear"
+            android:layout_toRightOf="@id/div"
+            android:id="@+id/exit"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/exit"
+            android:textSize="@dimen/txt_size"/>
+    </RelativeLayout>
+
+</LinearLayout>

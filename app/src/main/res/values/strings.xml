@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Easy Calc</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="clear">C</string>
+    <string name="mult">X</string>
+    <string name="div">/</string>
+    <string name="exit">EXIT</string>
+    <string name="num1_hint">Enter 1st number</string>
+    <string name="num2_hint">Enter 2nd number</string>
+</resources>
