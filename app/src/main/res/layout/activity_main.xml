@@ -25,7 +25,12 @@
 
     <TextView
         android:layout_marginTop="@dimen/distance"
-        android:id="@+id/ans"
+        android:id="@+id/tv_result"
+        android:text=""
+        android:gravity="center"
+        android:textSize="@dimen/txt_size"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         android:layout_width="@dimen/et_width"
         android:layout_height="@dimen/et_height"
         android:background="#9E9E9E"/>
@@ -36,48 +41,54 @@
         android:layout_marginTop="@dimen/distance">
 
         <Button
-            android:id="@+id/add"
+            android:id="@+id/btn_add"
             android:layout_width="@dimen/btn_width"
             android:layout_height="@dimen/btn_height"
             android:text="@string/add"
-            android:textSize="@dimen/txt_size"/>
+            android:textSize="@dimen/txt_size"
+            android:onClick="onClick"/>
         <Button
-            android:layout_toRightOf="@id/add"
-            android:id="@+id/sub"
+            android:layout_toRightOf="@id/btn_add"
+            android:id="@+id/btn_sub"
             android:layout_width="@dimen/btn_width"
             android:layout_height="@dimen/btn_height"
             android:text="@string/sub"
-            android:textSize="@dimen/txt_size"/>
+            android:textSize="@dimen/txt_size"
+            android:onClick="onClick"/>
         <Button
-            android:layout_toRightOf="@id/sub"
-            android:id="@+id/clear"
+            android:layout_toRightOf="@id/btn_sub"
+            android:id="@+id/btn_clear"
             android:layout_width="@dimen/btn_width"
             android:layout_height="@dimen/btn_height"
             android:text="@string/clear"
-            android:textSize="@dimen/txt_size"/>
+            android:textSize="@dimen/txt_size"
+            android:onClick="onClick"/>
         <Button
-            android:layout_below="@id/add"
-            android:id="@+id/mult"
+            android:layout_below="@id/btn_add"
+            android:id="@+id/btn_mult"
             android:layout_width="@dimen/btn_width"
             android:layout_height="@dimen/btn_height"
             android:text="@string/mult"
-            android:textSize="@dimen/txt_size"/>
+            android:textSize="@dimen/txt_size"
+            android:onClick="onClick"/>
         <Button
-            android:layout_below="@id/sub"
-            android:layout_toRightOf="@id/mult"
-            android:id="@+id/div"
+            android:layout_below="@id/btn_sub"
+            android:layout_toRightOf="@id/btn_mult"
+            android:id="@+id/btn_div"
             android:layout_width="@dimen/btn_width"
             android:layout_height="@dimen/btn_height"
             android:text="@string/div"
-            android:textSize="@dimen/txt_size"/>
+            android:textSize="@dimen/txt_size"
+            android:onClick="onClick"/>
         <Button
-            android:layout_below="@id/clear"
-            android:layout_toRightOf="@id/div"
-            android:id="@+id/exit"
+            android:layout_below="@id/btn_clear"
+            android:layout_toRightOf="@id/btn_div"
+            android:id="@+id/btn_exit"
             android:layout_width="@dimen/btn_width"
             android:layout_height="@dimen/btn_height"
             android:text="@string/exit"
-            android:textSize="@dimen/txt_size"/>
+            android:textSize="@dimen/txt_size"
+            android:onClick="onClick"/>
     </RelativeLayout>
 
 </LinearLayout>
